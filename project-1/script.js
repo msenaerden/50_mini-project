@@ -12,12 +12,14 @@ next.addEventListener("click", ()=>{
         currentActive=circles.length
     }
 
-    console.log(currentActive);
+    console.log(currentActive)
 
-    update()//SORR
-} )
+    update()
 
-prev.addEventListener("click", ()=>{
+
+   } )
+
+   prev.addEventListener("click", ()=>{
     currentActive--
 
     if(currentActive<1) {
@@ -41,7 +43,13 @@ function update(){
     const actives = document.querySelectorAll('.active')
 
     progress.style.width=(actives.length-1)/(circles.length-1)*100 + '%'
+
+    if(currentActive===1){
+        prev.disabled=true
+    }else if (currentActive===circles.length){
+        next.disabled=true
+    }else{
+        prev.disabled=false
+        next.disabled=false
+    }
 }
-
-
-
