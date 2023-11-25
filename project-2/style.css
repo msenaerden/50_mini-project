@@ -12,3 +12,51 @@ body{
     overflow: hidden;
     margin: 0;
 }
+
+.container{
+    display: flex;
+    width: 90vh;    
+}
+
+.panel{
+    background-size: auto 100%; /*kullanılan görselin hepsi çerçeve içine fixlenir*/ 
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 30px;
+    color: #fff;
+    cursor: pointer;
+    flex: 0.5; /*bu ne işe yaradı*/
+    margin: 10px;
+    position: relative;
+    transition: flex 0.7s ease-in;
+}
+
+.panel h3{
+    position: absolute;
+    bottom: 20px;
+    font-size: 24px;
+    margin: 0;
+    left: 20px;
+    opacity: 0;   
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 100;
+}
+
+.panel.active{
+    flex: 5;
+}
+.panel.active h3{
+    opacity: 1;
+}
+
+@media screen and (max-width: 480px){
+    .container{
+        width: 100vh;
+    }
+
+    .panel:nth-of-type(4),
+    .panel:nth-of-type(5){
+        display: none;
+    }
+}
