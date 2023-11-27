@@ -3,7 +3,6 @@
 }
 
 body{
-    height: 100vh;
     margin: 0;
     overflow-x:hidden ;
     background-color: #333;
@@ -12,13 +11,25 @@ body{
 
 .container{
     background-color: #fafafa;
-    transform-origin: top left; 
+    transform-origin: top left;
     transition: transform 0.5s linear;
-    
+    width: 100vw;
+    min-height: 100vh;
+    padding: 50px;
+     
 }
 
-.container .show-nav{
+.container.show-nav{
     transform: rotate(-20deg);
+}
+
+.container.show-nav .circle{
+    transform: rotate(-70deg);
+}
+
+.container.show-nav + nav li{
+    transform: translateX(0);
+    transition-delay: 0.3sn;
 }
 
 .rotation ul li{
@@ -31,7 +42,8 @@ body{
 }
 
 .content{
-    margin: 100px 200px;
+    max-width: 1000px;
+    margin: 50px auto;
 }
 
 .hidden-nav ul li{
@@ -54,7 +66,62 @@ body{
 }
 
 .circle button{
-    position: absolute;
-    top: 50%;
-    left: 50%;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 100px;
+  background: transparent;
+  border: 0;
+  font-size: 26px;
+  color: #fff;
+}
+
+.circle button:focus{
+    outline: none;
+}
+
+.circle button#open{
+    left: 60%;
+}
+
+.circle button#close{
+    top: 60%;
+    transform: rotate(90deg);
+    transform-origin: top left;
+}
+
+nav {
+    position: fixed;
+    bottom: 40px;
+    left: 0;
+    z-index: 100;
+}
+
+nav ul{
+    list-style-type: none;
+    padding-left: 30px;
+}
+
+nav ul li i {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+nav ul li{
+    text-transform: uppercase;
+    color: #fff;
+    margin: 40px 0;
+    transform: translateX(-100%);
+    transition: transform 0.4s ease-in;
+}
+
+nav ul li + li {
+    margin-left: 15px;
+    transform: translateX(-150%);
+}
+
+nav ul li + li + li {
+    margin-left: 30px;
+    transform: translateX(-200%);
 }
