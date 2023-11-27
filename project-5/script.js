@@ -15,9 +15,7 @@ function blur() {
 
     loading.innerText = `${percantage}%`
     loading.style.opacity= scale (percantage, 0, 100, 1, 0)
-    bg.style.opacity=scale(percantage, 0, 100, 0, 1)
-
-
+    bg.style.filter= `blur(${scale(percantage, 0, 100, 15, 0)}px)`
 
 }
 
