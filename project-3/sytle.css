@@ -1,0 +1,60 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    margin: 0;
+    overflow-x:hidden ;
+    background-color: #333;
+    color: #222;
+}
+
+.container{
+    background-color: #fafafa;
+    transform-origin: top left; 
+    transition: transform 0.5s linear;
+    
+}
+
+.container .show-nav{
+    transform: rotate(-20deg);
+}
+
+.rotation ul li{
+    list-style: none;
+    display: none;
+}
+
+.content img{
+    max-width: 100%;
+}
+
+.content{
+    margin: 100px 200px;
+}
+
+.hidden-nav ul li{
+    list-style: none;   
+}
+
+.circle-container{
+    position: fixed;
+    top: -100px;
+    left: -100px;
+}
+
+.circle {
+    background: #ff7979;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;  
+    position: relative;
+    transition: transform 0.5s linear;
+}
+
+.circle button{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
