@@ -20,13 +20,17 @@ body{
     display: grid;
     grid-template-columns: 3fr 1fr;
     height: 100%;
+    transition: all 1000ms ease-in;
 }
+
 
 .container.rightside{
     display: grid;
     grid-template-columns: 1fr 3fr;
     height: 100%;
+    transition: all 1000ms ease-in;
 }
+
 
 .split{
     display: flex;
@@ -43,16 +47,14 @@ body{
     
 }
 
-.split.left, .split.left::before, .split.right, .split.right::before{
-    transition: all 0.1s ease-in-out;
-}
+
 
 .split.right{
     background-image: url('indir.jfif');
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
-    transition: all 0.7s ease-in-out;
+  
 }
 
 
