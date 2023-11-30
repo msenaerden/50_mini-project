@@ -74,7 +74,11 @@ label{
     color: rgba(14, 5, 193);
     font-weight: bold;
     cursor: pointer;
+}
 
+.btn:active{
+    transform: scale(0.98);
+    color: white;
 }
 
 .container .form-container p{
