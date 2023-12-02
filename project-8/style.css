@@ -109,9 +109,9 @@ label{
     transition: 0.3 cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
-.form input:focus + label span,
-.form input:valid + label span{
+.form input:focus + .form label span,
+.form input:valid + .form label span{
     transform: translateY(-30px);
-    color: lightsteelblue;
+    color: red;
 }
 
