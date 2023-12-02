@@ -1,6 +1,6 @@
 *{
     box-sizing: border-box;
-   
+    font-family: sans-serif;
     color: white;
     
 }
@@ -16,13 +16,30 @@ body{
 }
 
 .container{
-    width: 500px;
-    height: 350px;
+    width: 800px;
+    height: 300px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     background-color: rgb(54, 47, 28);
     border-radius: 8px;
+    padding: 55px 30px;
 
+}
+
+h2{
+    font-weight: lighter;
+}
+
+button{
+    height: 40px;
+    width: 200px;
+    text-align: center;
+    background-color: goldenrod;
+    border-radius: 5px;
+    color:rgb(54, 47, 28) ;
+    font-size: 15px;
+    font-weight: bold;
+    outline: 0;
 }
