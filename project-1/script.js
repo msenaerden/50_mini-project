@@ -13,10 +13,7 @@ next.addEventListener("click", ()=>{
     }
 
     console.log(currentActive)
-
     update()
-
-
    } )
 
    prev.addEventListener("click", ()=>{
