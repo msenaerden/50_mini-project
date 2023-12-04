@@ -11,9 +11,10 @@ textarea.addEventListener('keyup', (e)=>{
         setTimeout(() =>{
             e.target.value=''
         },10)
-        randomSelect()
+
+        
     }
-    
+    randomSelect()
 })
 
 function createTags(input){
@@ -25,10 +26,8 @@ function createTags(input){
         const tagEl = document.createElement('span')
         tagEl.classList.add('tag')
         tagEl.innerText=tag
-        tagsEl.appendChild(tagEl)
-        
+        tagsEl.appendChild(tagEl)        
     });
-
 }
 
 //random select part
