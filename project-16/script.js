@@ -4,13 +4,13 @@ const percentage=document.getElementById('percentage')
 const remained=document.getElementById('remained')
 
 updateBigCup()
-smallCups.forEach((cup,idx) =>{
-    cup.addEventListener('click', () => highlightCups(idx))
+smallCups.forEach((cup,mahmut) =>{
+    cup.addEventListener('click', () => highlightCups(mahmut))
 })
 
 function highlightCups(idx) {
 
-    if(smallCups[idx].classList.contains('full') &&! smallCups[idx].nextElementSibling.classList.contains('full')){
+    if(smallCups[idx].classList.contains('full') && !smallCups[idx].nextElementSibling.classList.contains('full')){
         idx--
     }
 
