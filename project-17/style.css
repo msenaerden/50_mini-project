@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: #22254b;
+}
+
+nav{
+    background-color: #373b69;
+    height: 75px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px;
+}
+
+
+input{
+    background-color: transparent;
+    border: 3px solid #22254b;
+    border-radius: 50px;
+    padding: 10px;
+    color: #22254b;
+}
+input::placeholder{
+    color: #22254b;
+    font-size: 16px;
+}
+
+.movie-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 85%;
+    margin: auto;
+    grid-gap: 15px;
+    margin-top: 30px;
+}
+
+.movie-card{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.title{
+    background-color: #373b69;
+    height: 70px; ;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+    align-items: center;
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.title .rate{
+    background-color: #22254b;
+    color: goldenrod;
+    width: 40px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;  
+}
+
+.overview{
+   background-color: white;
+   text-align: justify;
+   padding: 30px 20px; 
+   font-size: 20px;
+   position: absolute;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   display: none;
+   transition: all 1 ease-in-out;
+}
+
+.movie-card:hover .overview{
+    display: block;
+    
+}
+
+
+
