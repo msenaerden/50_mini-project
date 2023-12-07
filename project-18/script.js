@@ -5,6 +5,7 @@ const rightArrow=document.getElementById('right')
 
 let slideCount = 0
 
+
 rightArrow.addEventListener('click',()=>{
     slideCount++
 
