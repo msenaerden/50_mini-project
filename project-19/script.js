@@ -76,7 +76,7 @@ function setTime() {
   timeEl.innerHTML = `${hoursForClock}:${
     minutes < 10 ? `0${minutes}` : minutes
   } ${ampm}`;
-  dateEl.innerHTML = `${days[day]}, ${months[month]} <span class="circle">${date}</span>`;
+  dateEl.innerHTML = `${days[day]}, ${months[month]} <span class="circle">${date}</span>`; //days[day] demenin sebebi time.getDay() derken haftanın kaçıncı gününde olduğunu gösteren bir tam sayı gelir bu tam sayı oluşturduğumuz days dizisinin index değerine denk düşer yani 4 numaralı index değerine sahip days dizisi elemanını ver gibi
 }
 
 // StackOverflow https://stackoverflow.com/questions/10756313/javascript-jquery-map-a-range-of-numbers-to-another-range-of-numbers
