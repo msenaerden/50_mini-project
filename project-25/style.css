@@ -29,12 +29,12 @@ body {
 }
 
 .nav a:hover {
-    color: rgb(205, 8, 8);
+    color: darkgoldenrod;
     ;
 }
 
 .nav a.active {
-    color: rgb(205, 8, 8);
+    color: darkgoldenrod;
     font-weight: bolder;
 }
 
@@ -59,12 +59,12 @@ body {
 }
 
 .nav.scroll a.active {
-    color: rgb(205, 8, 8);
+    color: darkgoldenrod;
     font-weight: bolder;
 }
 
 .nav.scroll a:hover {
-    color: rgb(205, 8, 8);
+    color: darkgoldenrod;
     ;
 }
 
