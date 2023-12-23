@@ -30,7 +30,7 @@ body {
 
 
 .counter.hide {
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(0);
     animation: hide 0.2s ease-out;
 }
 
@@ -136,6 +136,6 @@ h4 {
     }
 
     100% {
-        transform: translate(-50%, -50%) rotate(-1200deg);
+        transform: translate(-50%, -50%) rotate(-120deg);
     }
 }
