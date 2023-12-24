@@ -24,10 +24,11 @@ body {
     height: 16px;
     width: 16px;
     margin: 2px;
-    transition: 1s ease;
+    transition: 2s ease;
+
 }
 
 .square:hover {
-    transition-duration: 0s;
+    transition: 03s;
 
 }
